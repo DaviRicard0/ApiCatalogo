@@ -15,10 +15,11 @@ public static class CatalogEndPoint
         {
             return Results.Ok(
                context.Categories.ToList().Select(c => new CatalogDto(
-                    new CategoryDto(c.Id.ToString(),c.Title,c.Description,c.IdOwner.ToString()),
+                    new CategoryDto(c.Id.ToString(), c.Title, c.Description, c.IdOwner.ToString()),
                     [
-                        ..context.Products
+                        .. context.Products
                         .Where(p => p.IdCategory == c.Id)
+                        .ToList()
                         .Select(p => new ProductDto(p.Id.ToString(), p.Title, p.Description, p.Price, p.IdCategory.ToString(), p.IdOwner.ToString()))
                         .ToArray()
                     ]

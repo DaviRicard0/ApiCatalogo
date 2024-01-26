@@ -12,7 +12,7 @@ Content-Type: application/json
     "title": "Product Example",
     "price": 1929.99,
     "description": "Descrição do produto",
-    "idCategory": "65b182b6645b9d10d290a7a3",
+    "idCategory": "65b41ebafa0f1838b6ecb83f",
     "idOwner": "65ad6510f0532182f805fa12"
 }
 
