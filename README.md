@@ -18,3 +18,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [.NET](https://dotnet.microsoft.com/pt-br/)
 - [MongoDb](https://www.mongodb.com/pt-br)
 - [Entity Framework](https://learn.microsoft.com/pt-br/ef/)
+- [Docker](https://www.docker.com/)
