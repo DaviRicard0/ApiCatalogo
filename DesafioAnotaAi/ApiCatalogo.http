@@ -1,0 +1,59 @@
+@DesafioAnotaAi_HostAddress = http://localhost:65080
+
+GET {{DesafioAnotaAi_HostAddress}}/products
+Accept: application/json
+
+###
+
+POST {{DesafioAnotaAi_HostAddress}}/products
+Content-Type: application/json
+
+{
+    "title": "Product Example",
+    "price": 1929.99,
+    "description": "Descrição do produto",
+    "idCategory": "65b182b6645b9d10d290a7a3",
+    "idOwner": "65ad6510f0532182f805fa12"
+}
+
+###
+
+PUT {{DesafioAnotaAi_HostAddress}}/products
+Content-Type: application/json
+
+{
+    "id": s,
+    "title": "Product Example",
+    "price": 19.99,
+    "description": "",
+    "idCategory": "65b182b6645b9d10d290a7a3",
+    "idOwner": "65ad6510f0532182f805fa12"
+}
+
+###
+
+GET {{DesafioAnotaAi_HostAddress}}/categories
+Accept: application/json
+
+###
+
+GET {{DesafioAnotaAi_HostAddress}}/categories/65aeecc83540ea98e4dd0895
+Accept: application/json
+
+###
+
+POST {{DesafioAnotaAi_HostAddress}}/categories
+Content-Type: application/json
+
+{
+    "title": "Category Example",
+    "description": "",
+    "idOwner": "65ad6510f0532182f805fa12"
+}
+
+###
+
+GET {{DesafioAnotaAi_HostAddress}}/catalogs
+Accept: application/json
+
+###
